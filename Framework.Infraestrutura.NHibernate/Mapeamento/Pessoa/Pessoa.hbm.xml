@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   default-lazy="true"
+                   namespace="Framework.Modelo.Entidade.Pessoa"
+                   assembly="Framework.Modelo">  
+  <class name="Pessoa" table="PESSOA_PES">    
+    <id name="Identificador" column="PES_IDENTIFICADOR" type="Int32">
+      <generator class="native" />
+    </id>    
+    <property name="Descricao" column="PES_DESCRICAO" type="String" length="50" />
+    <property name="Observacao" column="PES_OBSERVACAO" type="String" length="50" />
+    <property name="Inativo" column="PES_INATIVO" type="Boolean" />
+
+    <many-to-one name="TipoPessoa" column="PES_TIPO" class="Framework.Modelo.Entidade.TipoPessoa" not-null="true" />
+
+    <bag name="Documentos" cascade="all-delete-orphan" inverse="true">
+      <key column="PDC_MESTRE" />
+      <one-to-many class="Framework.Modelo.Entidade.Pessoa.PessoaDocumento" />
+    </bag>
+
+    <bag name="Enderecos" cascade="all-delete-orphan" inverse="true">
+      <key column="PEN_MESTRE" />
+      <one-to-many class="Framework.Modelo.Entidade.Pessoa.PessoaEndereco" />
+    </bag>
+    
+    <!--<bag name="Emails" cascade="all-delete-orphan" inverse="true">
+      <key column="PEM_MESTRE" />
+      <one-to-many class="Framework.Modelo.Entidade.Pessoa.PessoaEmail" />
+    </bag>
+ 
+    <bag name="Telefones" cascade="all-delete-orphan" inverse="true">
+      <key column="PTL_MESTRE" />
+      <one-to-many class="Framework.Modelo.Entidade.Pessoa.PessoaTelefone" />
+    </bag>-->
+
+  </class>
+</hibernate-mapping>

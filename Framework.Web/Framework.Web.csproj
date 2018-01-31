@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{32A6EE54-D3DF-4A4A-B34F-0BC2591C9521}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Framework.Web</RootNamespace>
+    <AssemblyName>Framework.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BaseDados\Default.aspx" />
+    <Content Include="Cadastro\Pessoa.aspx" />
+    <Content Include="Cadastro\TipoDocumento.aspx" />
+    <Content Include="Cadastro\TipoPessoa.aspx" />
+    <Content Include="css\bootstrap-3.3.7\css\bootstrap-theme.css" />
+    <Content Include="css\bootstrap-3.3.7\css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap-3.3.7\css\bootstrap.css" />
+    <Content Include="css\bootstrap-3.3.7\css\bootstrap.min.css" />
+    <Content Include="css\bootstrap-3.3.7\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="css\bootstrap-3.3.7\js\bootstrap.js" />
+    <Content Include="css\bootstrap-3.3.7\js\bootstrap.min.js" />
+    <Content Include="css\bootstrap-3.3.7\js\npm.js" />
+    <Content Include="css\bootstrap-dynamic-tabs\ajax\file.html" />
+    <Content Include="css\bootstrap-dynamic-tabs\ajax\file2.html" />
+    <Content Include="css\bootstrap-dynamic-tabs\bootstrap-dynamic-tabs.css" />
+    <Content Include="css\bootstrap-dynamic-tabs\bootstrap-dynamic-tabs.js" />
+    <Content Include="css\bootstrap-dynamic-tabs\css\bootstrap-theme.css" />
+    <Content Include="css\bootstrap-dynamic-tabs\css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap-dynamic-tabs\css\bootstrap.css" />
+    <Content Include="css\bootstrap-dynamic-tabs\css\bootstrap.min.css" />
+    <Content Include="css\bootstrap-dynamic-tabs\css\test.css" />
+    <Content Include="css\bootstrap-dynamic-tabs\css\test2.css" />
+    <Content Include="css\bootstrap-dynamic-tabs\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="css\bootstrap-dynamic-tabs\index.html" />
+    <Content Include="css\bootstrap-dynamic-tabs\js\bootstrap.js" />
+    <Content Include="css\bootstrap-dynamic-tabs\js\bootstrap.min.js" />
+    <Content Include="css\bootstrap-dynamic-tabs\js\load.js" />
+    <Content Include="css\bootstrap-dynamic-tabs\js\load2.js" />
+    <Content Include="css\bootstrap-dynamic-tabs\js\npm.js" />
+    <Content Include="css\JavaScript.js" />
+    <Content Include="css\jquery\jquery-1.11.3.js" />
+    <Content Include="css\jquery\jquery-1.11.3.min.js" />
+    <Content Include="css\jquery\jquery-1.12.4.js" />
+    <Content Include="css\jquery\jquery-2.2.4.js" />
+    <Content Include="css\jquery\jquery-3.2.1.js" />
+    <Content Include="css\jquery\jquery-3.2.1.slim.js" />
+    <Content Include="css\jquery\jquery-latest.js" />
+    <Content Include="css\jquery\jquery-ui-1.12.1.js" />
+    <Content Include="css\jquery\jquery-ui-1.12.1.min.js" />
+    <Content Include="Default.aspx" />
+    <Content Include="hibernate.cfg.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Home.aspx" />
+    <Content Include="Includes\ListaEnderecos.html" />
+    <Content Include="Login.aspx" />
+    <Content Include="MasterPage\Basico\CadastroMestre.master" />
+    <Content Include="MasterPage\Basico\CadastroMestreListaGrid.master" />
+    <Content Include="Pesquisa\PesquisaPessoa.aspx" />
+    <Content Include="Pesquisa\PesquisaTipoPessoa.aspx" />
+    <Content Include="Pesquisa\PesquisaTipoDocumento.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPage\Basico\Mestre.Master" />
+    <Content Include="MasterPage\Basico\Cadastro.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Basico\" />
+    <Folder Include="Interface\Basico\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPage\Basico\Menu.Master" />
+    <Content Include="css\bootstrap-dynamic-tabs\css\bootstrap-theme.css.map" />
+    <Content Include="css\bootstrap-dynamic-tabs\css\bootstrap.css.map" />
+    <Content Include="css\bootstrap-dynamic-tabs\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="css\bootstrap-dynamic-tabs\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="css\bootstrap-dynamic-tabs\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="css\bootstrap-dynamic-tabs\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="css\bootstrap-dynamic-tabs\LICENSE" />
+    <Content Include="css\bootstrap-dynamic-tabs\README.md" />
+    <Content Include="css\bootstrap-3.3.7\css\bootstrap-theme.css.map" />
+    <Content Include="css\bootstrap-3.3.7\css\bootstrap-theme.min.css.map" />
+    <Content Include="css\bootstrap-3.3.7\css\bootstrap.css.map" />
+    <Content Include="css\bootstrap-3.3.7\css\bootstrap.min.css.map" />
+    <Content Include="css\bootstrap-3.3.7\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="css\bootstrap-3.3.7\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="css\bootstrap-3.3.7\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="css\bootstrap-3.3.7\fonts\glyphicons-halflings-regular.woff2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPage\Basico\Pesquisa.Master" />
+    <None Include="Properties\PublishProfiles\ericrm - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\ericrm - Web Deploy.pubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Framework.View\Framework.View.csproj">
+      <Project>{48d8a480-8768-4613-af59-08d546a7ddcd}</Project>
+      <Name>Framework.View</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49686</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52106/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

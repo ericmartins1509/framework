@@ -1,0 +1,17 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPage/Basico/CadastroMestre.master" AutoEventWireup="true"
+    Inherits="Framework.View.MasterPage.Basico.ViewMasterCadastroMestreListaGrid" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="cphCadastroMestreHead" runat="server">
+    <asp:ContentPlaceHolder ID="cphCadastroMestreListaGridHead" runat="server" />
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cphCadastroMestreTabsTitle" runat="server">
+    <asp:ContentPlaceHolder ID="cphCadastroMestreListaGridTabsTitle" runat="server" />
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="cphCadastroMestreBody" runat="server">
+    <asp:ContentPlaceHolder ID="cphCadastroMestreListaGridAntesBody" runat="server" />
+    <asp:ContentPlaceHolder ID="cphCadastroMestreListaGridBody" runat="server" />
+    <asp:ContentPlaceHolder ID="cphCadastroMestreListaGridDepoisBody" runat="server" />
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="cphCadastroMestreTabsBody" runat="server">
+    <asp:ContentPlaceHolder ID="cphCadastroMestreListaGridTabsBody" runat="server" />
+</asp:Content>

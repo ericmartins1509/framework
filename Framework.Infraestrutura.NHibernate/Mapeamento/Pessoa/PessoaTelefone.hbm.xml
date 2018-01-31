@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   default-lazy="true"
+                   namespace="Framework.Modelo.Entidade.Pessoa"
+                   assembly="Framework.Modelo">
+  <class name="PessoaTelefone" table="PESSOATELEFONE_PTL">
+    <id name="Identificador" column="PTL_IDENTIFICADOR" type="Int32">
+      <generator class="native" />
+    </id>
+    <!--<many-to-one name="Mestre" column="PTL_MESTRE" class="Framework.Modelo.Entidade.Pessoa.Pessoa" not-null="true" />-->
+    <property name="Descricao" column="PTL_DESCRICAO" type="String" length="50" />
+    <property name="Observacao" column="PTL_OBSERVACAO" type="String" length="50" />
+    <property name="Inativo" column="PTL_INATIVO" type="Boolean" />
+
+    <property name="Pais" column="PTL_PAIS" type="String" length="5" />
+    <property name="DDD" column="PTL_DDD" type="String" length="5" />
+    <property name="Telefone" column="PTL_TELEFONE" type="String" length="20" />
+    <property name="Complemento" column="PTL_COMPLEMENTO" type="String" length="20" />
+  </class>
+</hibernate-mapping>

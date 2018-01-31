@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true"
+    Inherits="Framework.View.MasterPage.Basico.ViewMasterMestre" %>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head runat="server">
+    <title></title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link href="../../css/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../../css/bootstrap-dynamic-tabs/bootstrap-dynamic-tabs.css" rel="stylesheet">
+
+    <asp:ContentPlaceHolder ID="cphMestreHead" runat="server" />
+</head>
+<body>
+    <form runat="server">
+        <header>
+            <asp:ContentPlaceHolder ID="cphMestreHeader" runat="server" />
+        </header>
+        <section>
+            <asp:ContentPlaceHolder ID="cphMestreBody" runat="server" />
+        </section>
+        <footer>
+            <asp:ContentPlaceHolder ID="cphMestreFooter" runat="server" />
+        </footer>
+    </form>
+    <script src="../../css/jquery/jquery-3.2.1.js"></script>
+    <script src="../../css/jquery/jquery-ui-1.12.1.js" type="text/javascript"></script>
+    <script src="../../css/bootstrap-3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../../css/bootstrap-dynamic-tabs/bootstrap-dynamic-tabs.js"></script>
+    <script type="text/javascript" src="../../css/JavaScript.js"></script>
+</body>
+</html>

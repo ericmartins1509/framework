@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   default-lazy="true"
+                   namespace="Framework.Modelo.Entidade"
+                   assembly="Framework.Modelo">
+  <class name="TipoDocumento" table="TIPODOCUMENTO_TPD">
+    <id name="Identificador" column="TPD_IDENTIFICADOR" type="Int32">
+      <generator class="native" />
+    </id>
+    <property name="Descricao" column="TPD_DESCRICAO" type="String" length="50" />
+    <property name="Observacao" column="TPD_OBSERVACAO" type="String" length="50" />
+    <property name="Inativo" column="TPD_INATIVO" type="Boolean" />
+  </class>
+</hibernate-mapping>

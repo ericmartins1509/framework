@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   default-lazy="true"
+                   namespace="Framework.Modelo.Entidade.Pessoa"
+                   assembly="Framework.Modelo">
+  <class name="PessoaEndereco" table="PESSOAENDERECO_PEN">
+    <id name="Identificador" column="PEN_IDENTIFICADOR" type="Int32">
+      <generator class="native" />
+    </id>
+    <many-to-one name="Mestre" column="PEN_MESTRE" class="Framework.Modelo.Entidade.Pessoa.Pessoa" not-null="true" />
+    <property name="Descricao" column="PEN_DESCRICAO" type="String" length="50" />
+    <property name="Observacao" column="PEN_OBSERVACAO" type="String" length="50" />
+    <property name="Inativo" column="PEN_INATIVO" type="Boolean" />
+
+    <property name="CEP" column="PEN_CEP" type="String" length="10" />
+    <property name="Logradouro" column="PEN_LOGRADOURO" type="String" length="10" />
+    <property name="Endereco" column="PEN_ENDERECO" type="String" length="100" />
+    <property name="Numero" column="PEN_NUMERO" type="String" length="5" />
+    <property name="Complemento" column="PEN_COMPLEMENTO" type="String" length="20" />
+    <property name="Bairro" column="PEN_BAIRRO" type="String" length="30" />
+    <property name="RegiaoAdministratriva" column="PEN_REGIAO" type="String" length="30" />
+    <property name="Municipio" column="PEN_NMUNICIPIO" type="String" length="30" />
+    <property name="Estado" column="PEN_CIDADE" type="String" length="30" />
+    <property name="Pais" column="PEN_PAIS" type="String" length="30" />    
+  </class>
+</hibernate-mapping>

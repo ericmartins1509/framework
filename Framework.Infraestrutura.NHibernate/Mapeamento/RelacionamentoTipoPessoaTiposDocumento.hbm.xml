@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   default-lazy="true"
+                   namespace="Framework.Modelo.Entidade"
+                   assembly="Framework.Modelo">
+  <class name="RelacionamentoTipoPessoaTiposDocumento" table="RELPESSOAODOCUMENTOS_RPD">
+    <id name="Identificador" column="RPD_IDENTIFICADOR" type="Int32">
+      <generator class="native" />
+    </id>
+    <many-to-one name="Mestre" column="RPD_MESTRE" class="Framework.Modelo.Entidade.TipoPessoa" not-null="true" />
+    <many-to-one name="Detalhe" column="RPD_DETALHE" class="Framework.Modelo.Entidade.TipoDocumento" not-null="true" />
+    <property name="Obrigatorio" column="RPD_OBRIGATORIO" type="Boolean" />
+  </class>
+</hibernate-mapping>

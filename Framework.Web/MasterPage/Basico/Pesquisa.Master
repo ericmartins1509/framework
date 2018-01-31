@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPage/Basico/Mestre.Master" AutoEventWireup="true"
+    Inherits="Framework.View.MasterPage.Basico.ViewMasterPesquisa" %>
+
+<%--<asp:Content ID="Content1" ContentPlaceHolderID="cphMestreHead" runat="server">
+    <script type="text/javascript">
+        function btnSelecionarLinha_Click(identificador) {
+            window.parent.document.getElementById("txtIdentificador").value = identificador;
+            window.parent.document.getElementById("txtIdentificador").onchange();
+            window.parent.document.getElementById("btnFecharPesquisa").click();
+        }
+    </script>
+    <asp:ContentPlaceHolder ID="cphPesquisaHead" runat="server" />
+</asp:Content>--%>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="cphMestreHeader" runat="server">
+    <asp:ContentPlaceHolder ID="cphPesquisaHeader" runat="server" />
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="cphMestreBody" runat="server">
+    <div class="container-fluid">
+        <div class="nav nav-tabs nav-fixed-top">
+            <div class="col-sm-3" />
+            <div class="col-sm-6">
+                <div class="input-group h1">
+                    <asp:TextBox runat="server" ID="txtPesquisa" ClientIDMode="Static" CssClass="form-control" />
+                    <span class="input-group-btn">
+                        <asp:Button runat="server" ID="btnPesquisa" CssClass="btn btn-primary glyphicon glyphicon-search" />
+                    </span>
+                </div>
+            </div>
+            <div class="col-sm-3" />
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-sm-3" />
+            <div class="table-responsive col-sm-6">
+                <asp:GridView runat="server" ID="grdPesquisa" AutoGenerateColumns="False"
+                    CssClass="table table-hover table-striped" GridLines="None">
+                    <%-- AllowPaging="True" PageSize="4"--%>
+                    <Columns>
+                        <asp:BoundField HeaderText="Identificador" DataField="Identificador" />
+                        <asp:BoundField HeaderText="Descricao" DataField="Descricao" HeaderStyle-HorizontalAlign="Center" />
+                    </Columns>
+                    <%--                    <PagerSettings PageButtonCount="4" />
+                    <PagerStyle CssClass="pagination-lg"/>--%>
+                </asp:GridView>
+            </div>
+            <div class="col-sm-3" />
+        </div>
+    </div>
+    <asp:ContentPlaceHolder ID="cphPesquisaBody" runat="server" />
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="cphMestreFooter" runat="server">
+    <asp:ContentPlaceHolder ID="cphPesquisaFooter" runat="server" />
+</asp:Content>

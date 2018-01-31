@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   default-lazy="true"
+                   namespace="Framework.Modelo.Entidade.Pessoa"
+                   assembly="Framework.Modelo">
+  <class name="PessoaDocumento" table="PESSOADOCUMENTO_PDC">
+    <id name="Identificador" column="PDC_IDENTIFICADOR" type="Int32">
+      <generator class="native" />
+    </id>
+    <many-to-one name="Mestre" column="PDC_MESTRE" class="Framework.Modelo.Entidade.Pessoa.Pessoa" not-null="true" />
+    <property name="Descricao" column="PDC_DESCRICAO" type="String" length="50" />
+    <property name="Observacao" column="PDC_OBSERVACAO" type="String" length="50" />
+    <property name="Inativo" column="PDC_INATIVO" type="Boolean" />
+
+    <many-to-one name="Documento" column="PDC_DOCUMENTO" class="Framework.Modelo.Entidade.RelacionamentoTipoPessoaTipoDocumento" not-null="true" />    
+  </class>
+</hibernate-mapping>

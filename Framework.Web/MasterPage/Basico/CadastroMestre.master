@@ -1,0 +1,15 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPage/Basico/Cadastro.master" AutoEventWireup="true"
+    Inherits="Framework.View.MasterPage.Basico.ViewMasterCadastroMestre" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="cphCadastroHead" runat="server">
+    <asp:ContentPlaceHolder ID="cphCadastroMestreHead" runat="server" />
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cphCadastroTabsTitle" runat="server">
+    <asp:ContentPlaceHolder ID="cphCadastroMestreTabsTitle" runat="server" />
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="cphCadastroBody" runat="server">
+    <asp:ContentPlaceHolder ID="cphCadastroMestreBody" runat="server" />
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="cphCadastroTabsBody" runat="server">
+    <asp:ContentPlaceHolder ID="cphCadastroMestreTabsBody" runat="server" />
+</asp:Content>

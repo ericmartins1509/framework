@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   default-lazy="true"
+                   namespace="Framework.Modelo.Entidade.Pessoa"
+                   assembly="Framework.Modelo">
+  <class name="PessoaEmail" table="PESSOAEMAIL_PEM">
+    <id name="Identificador" column="PEM_IDENTIFICADOR" type="Int32">
+      <generator class="native" />
+    </id>
+    <!--<many-to-one name="Mestre" column="PEM_MESTRE" class="Framework.Modelo.Entidade.Pessoa.Pessoa" not-null="true" />--> 
+    <property name="Descricao" column="PEM_DESCRICAO" type="String" length="50" />
+    <property name="Observacao" column="PEM_OBSERVACAO" type="String" length="50" />
+    <property name="Inativo" column="PEM_INATIVO" type="Boolean" />
+    
+    <property name="Email" column="PEM_EMAIL" type="String" length="100" />
+  </class>
+</hibernate-mapping>
